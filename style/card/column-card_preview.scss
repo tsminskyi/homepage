@@ -1,0 +1,26 @@
+.column-card_preview {
+    width: 30%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    .column-card_preview_img {
+        width: auto;
+        height: 370px;
+    }
+    .column-card_preview_text {
+        padding: 0 30px 30px 30px;
+        :first-child {
+            font-size: 20px;
+            line-height: 67px;
+            font-weight: 800;
+        }
+
+        :last-child {
+            font-size: 15px;
+            letter-spacing: -1px;
+            line-height: 27px;
+            font-weight: 400;
+        }
+    }
+}

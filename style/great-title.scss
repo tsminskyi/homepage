@@ -1,0 +1,42 @@
+.great-title {
+    text-align: center;
+    position: relative;
+    margin: 40px  0;
+    :first-child {
+        font-size: 162px;
+        letter-spacing: -8px;
+        line-height: 195px;
+        font-weight: 800;
+    }
+    :last-child {
+        position: absolute;
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 70%;
+        font-size: 25px;
+        letter-spacing: -1px;
+        line-height: 35px;
+        font-weight: 400;
+    }
+    @media (max-width: 690px) {
+        :first-child {
+            font-size: 100px;
+            top: 56%;
+        }
+        :last-child {
+            font-size: 18px;
+            top: 56%;
+        }
+    }
+    @media (max-width: 375px) {
+        :first-child {
+            font-size: 80px;
+            top: 56%;
+        }
+        :last-child {
+            font-size: 15px;
+            top: 56%;
+        }
+    }
+}

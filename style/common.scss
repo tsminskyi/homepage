@@ -1,0 +1,18 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $white;
+    font-family: $font-family-primary;
+}
+
+.conteiner {
+    max-width: 1150px;
+    min-width: 320px;
+    margin: 0px auto;
+    padding: 0 10px;
+}
