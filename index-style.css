@@ -511,6 +511,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 0 50px;
+  list-style-type: none;
 }
 .column-card_item .logo {
   width: 70px;
@@ -540,6 +541,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 20px;
+  list-style-type: none;
 }
 .column-card_small-item .column-card_small-item_img {
   width: 40px;
@@ -565,6 +567,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 10px;
+  list-style-type: none;
 }
 .column-card_preview .column-card_preview_img {
   width: auto;
