@@ -1,15 +1,15 @@
-.column-card_preview {
+.column-card-preview {
     width: 30%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 10px;
     list-style-type: none;
-    .column-card_preview_img {
+    .column-card-preview__img {
         width: auto;
         height: 370px;
     }
-    .column-card_preview_text {
+    .column-card-preview__text {
         padding: 0 30px 30px 30px;
         :first-child {
             font-size: 20px;

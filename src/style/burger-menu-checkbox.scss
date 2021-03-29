@@ -1,8 +1,8 @@
-#burger-menu_toggle {
+#checkbox-btn__toggle {
     opacity: 0;
 }
 
-.burger-menu_btn {
+.checkbox-btn__label {
     display: flex;
     align-items: center;
     width: 27px;
@@ -10,9 +10,9 @@
     cursor: pointer;
 }
 
-.burger-menu_btn span,
-.burger-menu_btn span::before,
-.burger-menu_btn span::after {
+.checkbox-btn__label span,
+.checkbox-btn__label span::before,
+.checkbox-btn__label span::after {
     position: absolute;
     width: 27px;
     height: 2px;
@@ -20,21 +20,21 @@
     flex-direction: row-reverse;
 }
 
-.burger-menu_btn span {
+.checkbox-btn__label span {
     width: 20px;
 }
 
-.burger-menu_btn span::before {
+.checkbox-btn__label span::before {
     content: "";
     top: -8px;
 }
 
-.burger-menu_btn span::after {
+.checkbox-btn__label span::after {
     content: "";
     top: 8px;
 }
 
-.burger-menu_box {
+.burger-menu {
     position: fixed;
     visibility: hidden;
     right: -100%;
@@ -48,22 +48,22 @@
     justify-content: space-between;
     padding: 15px;
     z-index: 9;
-    .burger-menu_navigate {
+    .burger-menu__navigate {
         div {
             margin: 30px 0;
         }
     }
-    .burger-menu_close_btn span {
+    .checkbox-btn__label_close-btn {
         width: 20px;
         transform: rotate(45deg);
     }
 
-    .burger-menu_close_btn span::before {
+    .checkbox-btn__label_close-btn span::before {
         width: 20px;
         top: 0;
     }
 
-    .burger-menu_close_btn span::after {
+    .checkbox-btn__label_close-btn span::after {
         width: 20px;
         top: 0;
         transform: rotate(90deg);
@@ -84,7 +84,7 @@
     }
 }
 
-#burger-menu_toggle:checked ~ .burger-menu_box {
+#checkbox-btn__toggle:checked ~ .burger-menu {
     visibility: visible;
     right: 0;
 }

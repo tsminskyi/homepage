@@ -13,22 +13,22 @@
 <body>
     <div class="nav_bar conteiner">
         <div class="logo">
-            <img src="./img/logo.png" alt="" />
+            <img src="./src/img/logo.png" alt="" />
         </div>
 
         <div class="menu">
+                <input id="checkbox-btn__toggle" type="checkbox" />
+                <label class="checkbox-btn__label" for="checkbox-btn__toggle">
+                    <span></span>
+                </label>
 
-            <input id="burger-menu_toggle" type="checkbox" />
-            <label class="burger-menu_btn" for="burger-menu_toggle">
-                <span></span>
-            </label>
 
-            <div class="burger-menu_box">
+            <div class="burger-menu">
 
-                <div class="burger-menu_navigate">
-                    <label class="burger-menu_btn burger-menu_close_btn" for="burger-menu_toggle">
-                        <span></span>
-                    </label>
+                <div class="burger-menu__navigate">
+                        <label class="checkbox-btn__label checkbox-btn__label_close-btn" for="checkbox-btn__toggle">
+                            <span></span>
+                        </label>
 
                     <div class="combo-box">
                         <p>Menu</p>
@@ -48,7 +48,7 @@
                         </ul>
                     </div>
 
-                    <div class="combo-box combo-box_sall_font_size">
+                    <div class="combo-box combo-box_sall-size">
                         <p>Get in Touch</p>
                         <ul>
                             <li>
@@ -58,7 +58,7 @@
 
                     </div>
 
-                    <div class="combo-box combo-box_sall_font_size">
+                    <div class="combo-box combo-box_sall-size">
                         <p>Get Social</p>
                         <ul>
                             <li>
@@ -80,46 +80,46 @@
         </div>
     </div>
     <div class="header">
-        <p class="header_title">Hello There!</p>
-        <p class="header_text">We are Leon - Super Creative & Minimal
-        <p class="header_text">Agency Web Template</p>
+        <p class="header__title">Hello There!</p>
+        <p class="header__text">We are Leon - Super Creative & Minimal
+        <p class="header__text">Agency Web Template</p>
         </p>
     </div>
-        <ul class="works">
-            <li class="column-card_item">
-                <div class="logo"><img src="./img/w3.svg" alt=""></div>
-                <div class="title">Tell Us Your Idea</div>
-                <div class="description">Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmod tempor
-                    incididunt ut lab</div>
-            </li>
-            <li class="column-card_item">
-                <div class="logo"><img src="./img/w1.svg" alt=""></div>
-                <div class="title">We Will Do All The WOrk</div>
-                <div class="description">Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmod tempor
-                    incididunt ut lab</div>
-            </li>
-            <li class="column-card_item">
-                <div class="logo"><img src="./img/w2.svg" alt=""></div>
-                <div class="title">Your Product is Worldwide</div>
-                <div class="description">Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmod tempor
-                    incididunt ut lab</div>
-            </li>
-        </ul>
+    <ul class="works">
+        <li class="column-card">
+            <div class="column-card__logo"><img src="./src/img/w3.svg" alt=""></div>
+            <div class="column-card__title">Tell Us Your Idea</div>
+            <div class="column-card__description">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor
+                incididunt ut lab</div>
+        </li>
+        <li class="column-card">
+            <div class="column-card__logo"><img src="./src/img/w1.svg" alt=""></div>
+            <div class="column-card__title">We Will Do All The WOrk</div>
+            <div class="column-card__description">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor
+                incididunt ut lab</div>
+        </li>
+        <li class="column-card">
+            <div class="column-card__logo"><img src="./src/img/w2.svg" alt=""></div>
+            <div class="column-card__title">Your Product is Worldwide</div>
+            <div class="column-card__description">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor
+                incididunt ut lab</div>
+        </li>
+    </ul>
     <div class="services conteiner">
         <div class="great-title">
             <div>services</div>
             <div>Don't be busy, be productive</div>
         </div>
         <div class="services-content">
-            <ul class="services_items">
-                <li class="column-card_small-item">
-                    <div class="column-card_small-item_img">
-                        <img src="./img/s1.svg" alt="">
+            <ul class="services-items">
+                <li class="column-card-small">
+                    <div class="column-card-small__img">
+                        <img src="./src/img/s1.svg" alt="">
                     </div>
-                    <div class="column-card_small-item_text">
+                    <div class="column-card-small__text">
                         <div>Graphic Design</div>
                         <div>Graphic design is the process of visual
                             communication and problem-solving
@@ -129,11 +129,11 @@
                     </div>
                 </li>
 
-                <li class="column-card_small-item">
-                    <div class="column-card_small-item_img">
-                        <img src="./img/s2.svg" alt="">
+                <li class="column-card-small">
+                    <div class="column-card-small__img">
+                        <img src="./src/img/s2.svg" alt="">
                     </div>
-                    <div class="column-card_small-item_text">
+                    <div class="column-card-small__text">
                         <div>Web Design</div>
                         <div>Web design encompasses many different
                             skills and disciplines in the production
@@ -142,11 +142,11 @@
                     </div>
                 </li>
 
-                <li class="column-card_small-item">
-                    <div class="column-card_small-item_img">
-                        <img src="./img/s3.svg" alt="">
+                <li class="column-card-small">
+                    <div class="column-card-small__img">
+                        <img src="./src/img/s3.svg" alt="">
                     </div>
-                    <div class="column-card_small-item_text">
+                    <div class="column-card-small__text">
                         <div>UI & UX</div>
                         <div>Process of enhancing user satisfaction
                             with a product by improving the
@@ -156,11 +156,11 @@
                     </div>
                 </li>
 
-                <li class="column-card_small-item">
-                    <div class="column-card_small-item_img">
-                        <img src="./img/s4.svg" alt="">
+                <li class="column-card-small">
+                    <div class="column-card-small__img">
+                        <img src="./src/img/s4.svg" alt="">
                     </div>
-                    <div class="column-card_small-item_text">
+                    <div class="column-card-small__text">
                         <div>Web Development</div>
                         <div>Web development is a broad term for
                             the work involved in developing a web site
@@ -169,7 +169,7 @@
                     </div>
                 </li>
             </ul>
-            <div class="dec_element">
+            <div class="dec-element">
                 <div></div>
                 <div></div>
             </div>
@@ -180,77 +180,77 @@
             <div>portfolio</div>
             <div>If you do it right, it will last forever.</div>
         </div>
-        <ul class="portfolio_items">
-            <li class="column-card_preview">
-                <div class="column-card_preview_img">
+        <ul class="portfolio-items">
+            <li class="column-card-preview">
+                <div class="column-card-preview__img">
                     <img src="#" alt="">
                 </div>
-                <div class="column-card_preview_text">
+                <div class="column-card-preview__text">
                     <div>Project Here</div>
                     <div>My creative ability is very difficult to measure because it can
                         manifest in so many surprising and.</div>
                 </div>
             </li>
-            <li class="column-card_preview">
-                <div class="column-card_preview_img">
+            <li class="column-card-preview">
+                <div class="column-card-preview__img">
                     <img src="#" alt="">
                 </div>
-                <div class="column-card_preview_text">
+                <div class="column-card-preview__text">
                     <div>Project Here</div>
                     <div>My creative ability is very difficult to measure because it can
                         manifest in so many surprising and.</div>
                 </div>
             </li>
-            <li class="column-card_preview">
-                <div class="column-card_preview_img">
+            <li class="column-card-preview">
+                <div class="column-card-preview__img">
                     <img src="#" alt="">
                 </div>
-                <div class="column-card_preview_text">
+                <div class="column-card-preview__text">
                     <div>Project Here</div>
                     <div>My creative ability is very difficult to measure because it can
                         manifest in so many surprising and.</div>
                 </div>
             </li>
         </ul>
-        <button class="btn_show_more">Show Me More</button>
+        <button class="btn-show-more">Show Me More</button>
     </div>
     <div class="about conteiner">
         <div class="great-title">
             <div>about</div>
             <div>Less is more work</div>
         </div>
-        <div class="about-content">
-            <div class="about_dec_element">
+        <div class="about__content">
+            <div class="about__dec-element">
                 <div></div>
-                <div class="fig_css"></div>
+                <div class="about__fig-css"></div>
                 <div></div>
             </div>
-            <div class="about_text">
+            <div class="about__text">
                 <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua. Ut enim ad minim veniam, quis nostrud
                     exercitation ullamco laboris nisi ut aliqui</div>
-                <div class="line"></div>
+                <div class="about__line"></div>
                 <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                     exercitation ullamco laboris nisi ut aliqu</div>
             </div>
         </div>
     </div>
-    <div class="contact_background_color">
+    <div class="contact-background">
         <div class="contact conteiner">
             <div class="great-title">
                 <div>contact</div>
                 <div>We are born to create</div>
             </div>
-            <div class="contact_links">
-                <div class="contact_text">Feel free to drop us a line at:</div>
-                <div class="contact_email">leonagency@mail.com</div>
-                <div class="contact_social">
+            <div class="contact__links">
+                <div class="contact__text">Feel free to drop us a line at:</div>
+                <div class="contact__email">leonagency@mail.com</div>
+                <div class="contact__social">
                     <p>Find us on social networks:</p>
-                    <img src="./img/dribble.svg" alt="">
-                    <img src="./img/google.svg" alt="">
-                    <img src="./img/twitter.svg" alt="">
+                    <img src="./src/img/dribble.svg" alt="">
+                    <img src="./src/img/google.svg" alt="">
+                    <img src="./src/img/twitter.svg" alt="">
                 </div>
             </div>
         </div>

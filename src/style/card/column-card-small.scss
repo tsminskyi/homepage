@@ -1,16 +1,16 @@
-.column-card_small-item {
+.column-card-small {
     width: 40%;
     display: flex;
     justify-content: space-between;
     margin: 20px;
     list-style-type: none;
-    .column-card_small-item_img {
+    .column-card-small__img {
         width: 40px;
         height: 40px;
         margin: 15px;
         padding-top: 10px;
     }
-    .column-card_small-item_text {
+    .column-card-small__text {
         :first-child {
             font-size: 20px;
             line-height: 67px;
