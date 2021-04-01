@@ -5,31 +5,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index-style.css">
+    <link rel="stylesheet" href="./index-style.css">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;800&display=swap" rel="stylesheet">
     <title>Home page</title>
 </head>
 
 <body>
-    <div class="nav_bar conteiner">
+    <div class="nav-bar conteiner">
         <div class="logo">
-            <img src="./src/img/logo.png" alt="" />
+            <img src="../../img/logo.png" alt="" />
         </div>
 
         <div class="menu">
-                <input id="checkbox-btn__toggle" type="checkbox" />
-                <label class="checkbox-btn__label" for="checkbox-btn__toggle">
+            <div class="checkbox-btn">
+                <input id="toggle" class="checkbox-btn__toggle" type="checkbox" onchange="openMenu()"/>
+                <label class="checkbox-btn__label" for="toggle">
                     <span></span>
                 </label>
+            </div>
+
 
 
             <div class="burger-menu">
 
                 <div class="burger-menu__navigate">
-                        <label class="checkbox-btn__label checkbox-btn__label_close-btn" for="checkbox-btn__toggle">
+                    <div class="checkbox-btn">
+                        <label class="checkbox-btn__label checkbox-btn__label_close-btn" for="toggle">
                             <span></span>
                         </label>
-
+                    </div>
                     <div class="combo-box">
                         <p>Menu</p>
                         <ul>
@@ -87,21 +91,21 @@
     </div>
     <ul class="works">
         <li class="column-card">
-            <div class="column-card__logo"><img src="./src/img/w3.svg" alt=""></div>
+            <div class="column-card__logo"><img src="../../img/w3.svg" alt=""></div>
             <div class="column-card__title">Tell Us Your Idea</div>
             <div class="column-card__description">Lorem ipsum dolor sit amet, consectetur
                 adipiscing elit, sed do eiusmod tempor
                 incididunt ut lab</div>
         </li>
         <li class="column-card">
-            <div class="column-card__logo"><img src="./src/img/w1.svg" alt=""></div>
+            <div class="column-card__logo"><img src="../../img/w1.svg" alt=""></div>
             <div class="column-card__title">We Will Do All The WOrk</div>
             <div class="column-card__description">Lorem ipsum dolor sit amet, consectetur
                 adipiscing elit, sed do eiusmod tempor
                 incididunt ut lab</div>
         </li>
         <li class="column-card">
-            <div class="column-card__logo"><img src="./src/img/w2.svg" alt=""></div>
+            <div class="column-card__logo"><img src="../../img/w2.svg" alt=""></div>
             <div class="column-card__title">Your Product is Worldwide</div>
             <div class="column-card__description">Lorem ipsum dolor sit amet, consectetur
                 adipiscing elit, sed do eiusmod tempor
@@ -115,11 +119,11 @@
         </div>
         <div class="services-content">
             <ul class="services-items">
-                <li class="column-card-small">
-                    <div class="column-card-small__img">
-                        <img src="./src/img/s1.svg" alt="">
+                <li class="column-card1">
+                    <div class="column-card1__img">
+                        <img src="../../img/s1.svg" alt="">
                     </div>
-                    <div class="column-card-small__text">
+                    <div class="column-card1__text">
                         <div>Graphic Design</div>
                         <div>Graphic design is the process of visual
                             communication and problem-solving
@@ -129,11 +133,11 @@
                     </div>
                 </li>
 
-                <li class="column-card-small">
-                    <div class="column-card-small__img">
-                        <img src="./src/img/s2.svg" alt="">
+                <li class="column-card1">
+                    <div class="column-card1__img">
+                        <img src="../../img/s2.svg" alt="">
                     </div>
-                    <div class="column-card-small__text">
+                    <div class="column-card1__text">
                         <div>Web Design</div>
                         <div>Web design encompasses many different
                             skills and disciplines in the production
@@ -142,11 +146,11 @@
                     </div>
                 </li>
 
-                <li class="column-card-small">
-                    <div class="column-card-small__img">
-                        <img src="./src/img/s3.svg" alt="">
+                <li class="column-card1">
+                    <div class="column-card1__img">
+                        <img src="../../img/s3.svg" alt="">
                     </div>
-                    <div class="column-card-small__text">
+                    <div class="column-card1__text">
                         <div>UI & UX</div>
                         <div>Process of enhancing user satisfaction
                             with a product by improving the
@@ -156,11 +160,11 @@
                     </div>
                 </li>
 
-                <li class="column-card-small">
-                    <div class="column-card-small__img">
-                        <img src="./src/img/s4.svg" alt="">
+                <li class="column-card1">
+                    <div class="column-card1__img">
+                        <img src="../../img/s4.svg" alt="">
                     </div>
-                    <div class="column-card-small__text">
+                    <div class="column-card1__text">
                         <div>Web Development</div>
                         <div>Web development is a broad term for
                             the work involved in developing a web site
@@ -248,9 +252,9 @@
                 <div class="contact__email">leonagency@mail.com</div>
                 <div class="contact__social">
                     <p>Find us on social networks:</p>
-                    <img src="./src/img/dribble.svg" alt="">
-                    <img src="./src/img/google.svg" alt="">
-                    <img src="./src/img/twitter.svg" alt="">
+                    <img src="../../img/dribble.svg" alt="">
+                    <img src="../../img/google.svg" alt="">
+                    <img src="../../img/twitter.svg" alt="">
                 </div>
             </div>
         </div>
@@ -258,6 +262,7 @@
     <div class="footer">
         © 2019 - <span>Leon</span>,All Right Reserved
     </div>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>

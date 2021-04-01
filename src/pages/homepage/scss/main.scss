@@ -1,4 +1,22 @@
-.nav_bar {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $white;
+    font-family: $font-family-primary;
+}
+
+.conteiner {
+    max-width: 1150px;
+    min-width: 320px;
+    margin: 0px auto;
+    padding: 0 10px;
+}
+
+.nav-bar {
     display: flex;
     width: auto;
     height: 90px;
@@ -17,51 +35,52 @@
         flex-direction: row-reverse;
         position: relative;
 
-        .combo-box {
-            a {
-                color: $white;
-            }
-            p {
-                color: $light_gray;
-            }
-            a:hover {
-                color: $light-green;
-            }
-        }
-
         .burger-menu {
             background-color: $dark_blue;
-        }
-        .checkbox-btn__label span,
-        .checkbox-btn__label span::before,
-        .checkbox-btn__label span::after {
-            background-color: $dark_blue;
-        }
-        .checkbox-btn__label_close-btn span,
-        .checkbox-btn__label_close-btn span::before,
-        .checkbox-btn__label_close-btn span::after {
-            background-color: $white;
-        }
+            .combo-box {
+                a {
+                    color: $white;
+                }
+                p {
+                    color: $light_gray;
+                }
+                a:hover {
+                    color: $light-green;
+                }
+            }
+            .combo-box_sall-size {
+                a {
+                    font-size: 21px;
+                }
+            }
 
-        .checkbox-btn__label_close-btn:hover {
-            span::before,
-            span::after,
-            span {
-                background-color: $light-green;
+            .copyright {
+                color: $light_gray;
             }
         }
-
-        .combo-box_sall-size {
-            a {
-                font-size: 21px;
+        .checkbox-btn {
+            &__label span,
+            &__label span::before,
+            &__label span::after {
+                background-color: $dark_blue;
             }
-        }
+            &__label_close-btn span,
+            &__label_close-btn span::before,
+            &__label_close-btn span::after {
+                background-color: $white;
+            }
 
-        .copyright {
-            color: $light_gray;
+            &__label_close-btn:hover {
+                span::before,
+                span::after,
+                span {
+                    background-color: $light-green;
+                }
+            }
         }
     }
 }
+
 
 .header {
     background-color: $white_3;

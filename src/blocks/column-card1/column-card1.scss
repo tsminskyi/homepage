@@ -1,16 +1,11 @@
-.column-card-small {
+.column-card1 {
     width: 40%;
     display: flex;
     justify-content: space-between;
     margin: 20px;
     list-style-type: none;
-    .column-card-small__img {
-        width: 40px;
-        height: 40px;
-        margin: 15px;
-        padding-top: 10px;
-    }
-    .column-card-small__text {
+
+    &__text {
         :first-child {
             font-size: 20px;
             line-height: 67px;
@@ -22,5 +17,12 @@
             line-height: 27px;
             font-weight: 400;
         }
+    }
+
+    &__img {
+        width: 40px;
+        height: 40px;
+        margin: 15px;
+        padding-top: 10px;
     }
 }

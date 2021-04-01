@@ -1,0 +1,13 @@
+&__text {
+    :first-child {
+        font-size: 20px;
+        line-height: 67px;
+        font-weight: 800;
+    }
+    :last-child {
+        font-size: 15px;
+        letter-spacing: -1px;
+        line-height: 27px;
+        font-weight: 400;
+    }
+}

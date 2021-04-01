@@ -1,0 +1,31 @@
+.burger-menu {
+    position: fixed;
+    visibility: hidden;
+    right: -100%;
+    width: 19%;
+    height: 100%;
+    margin: 0;
+    top: 0;
+    transition-duration: 0.25s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    z-index: 9;
+    @media (max-width: 675px) {
+        width: 50%;
+        align-items: center;
+    }
+    @media (max-width: 400px) {
+        width: 100%;
+    }
+    &__navigate {
+        div {
+            margin: 30px 0;
+        }
+    }
+    &_open {
+        visibility: visible;
+        right: 0;
+    }
+}

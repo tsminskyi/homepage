@@ -1,0 +1,15 @@
+&_close-btn {
+    width: 20px;
+    transform: rotate(45deg);
+}
+
+&_close-btn span::before {
+    width: 20px;
+    top: 0;
+}
+
+&_close-btn span::after {
+    width: 20px;
+    top: 0;
+    transform: rotate(90deg);
+}

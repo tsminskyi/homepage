@@ -1,0 +1,31 @@
+&__label {
+    display: flex;
+    align-items: center;
+    width: 27px;
+    height: 15px;
+    cursor: pointer;
+}
+
+&__label span,
+&__label span::before,
+&__label span::after {
+    position: absolute;
+    width: 27px;
+    height: 2px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+&__label span {
+    width: 20px;
+}
+
+&__label span::before {
+    content: "";
+    top: -8px;
+}
+
+&__label span::after {
+    content: "";
+    top: 8px;
+}

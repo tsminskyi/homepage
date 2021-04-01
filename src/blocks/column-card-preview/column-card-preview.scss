@@ -5,19 +5,20 @@
     align-items: center;
     padding: 10px;
     list-style-type: none;
-    .column-card-preview__img {
+    &__img {
         width: auto;
         height: 370px;
     }
-    .column-card-preview__text {
+
+    &__text {
         padding: 0 30px 30px 30px;
-        :first-child {
+        &:first-child {
             font-size: 20px;
             line-height: 67px;
             font-weight: 800;
         }
 
-        :last-child {
+        &:last-child {
             font-size: 15px;
             letter-spacing: -1px;
             line-height: 27px;

@@ -1,0 +1,53 @@
+.checkbox-btn {
+    display: flex;
+    &__toggle {
+        opacity: 0;
+    }
+
+    &__label {
+        display: flex;
+        align-items: center;
+        width: 27px;
+        height: 15px;
+        cursor: pointer;
+
+        span,
+        span::before,
+        span::after {
+            position: absolute;
+            width: 27px;
+            height: 2px;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        span {
+            width: 20px;
+        }
+
+        span::before {
+            content: "";
+            top: -8px;
+        }
+
+        span::after {
+            content: "";
+            top: 8px;
+        }
+        &_close-btn {
+            span {
+                width: 20px;
+                transform: rotate(45deg);
+            }
+            span::before {
+                width: 20px;
+                top: 0;
+            }
+            span::after {
+                width: 20px;
+                top: 0;
+                transform: rotate(90deg);
+            }
+        }
+    }
+}
