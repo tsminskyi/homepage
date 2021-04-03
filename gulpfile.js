@@ -1,40 +1,79 @@
 const { dest, series, src, parallel } = require("gulp");
 const concat = require("gulp-concat");
 const del = require("delete");
-const srcB = require('gulp-bem-src');
+const image = require('gulp-image');
+const pug = require('gulp-pug');
 
 const sass = require("gulp-sass");
 
 const minifyCSS = require("gulp-clean-css");
 
-function blocks_homepage() {
-    return srcB(
-        ['./src/blocks'],
-        [{ block: 'burger-menu' }, { block: 'checkbox-btn' }, { block: 'column-card' },
-        { block: 'column-card1' }, { block: 'column-card-preview' }, { block: 'combo-box' },
-        { block: 'great-title' }],
-        'scss',
-        {
 
-            config: {
-                './src/blocks': { scheme: 'nested' }
-            }
-        }
-    )
+const pages_path = [
+    { name: "homepage", path: "./src/pages/homepage" }
+]
+
+function page_js(name, path) {
+    return src(path + '/js/*.js')
+        .pipe(concat("./build/" + name + "/js/index.js"))
+        .pipe(dest('./'));
+}
+
+function page_scss(name, path) {
+    return src(path + "/scss/import.scss")
         .pipe(sass())
-        .pipe(concat("./src/pages/homepage/index-style.css"))
+        .pipe(concat("./build/" + name + "/style/style.css"))
         .pipe(minifyCSS())
         .pipe(dest("./"));
-
 }
 
-
-function scss_homepage() {
-    return src("./src/pages/homepage/scss/import.scss")
-    .pipe(sass())
-    .pipe(concat("./src/pages/homepage/index-style.css"))
-    .pipe(minifyCSS())
-    .pipe(dest("./"));
+function page_html(name, path) {
+    return src(path + "/index.pug")
+        .pipe(pug({
+            pretty: true
+        }))
+        .pipe(dest("./build/" + name));
 }
-exports.default = series(scss_homepage);
 
+function cleanUp() {
+    return del("./build");
+}
+
+function build_img() {
+    return src('./src/img/*')
+        .pipe(image())
+        .pipe(dest('./build/img'));
+};
+
+function build_scss() {
+
+    return new Promise(function (resolve, reject) {
+        pages_path.forEach(element => {
+            page_scss(element.name, element.path);
+        });
+
+        resolve();
+    });
+}
+function build_js() {
+
+    return new Promise(function (resolve, reject) {
+        pages_path.forEach(element => {
+            page_js(element.name, element.path);
+        });
+
+        resolve();
+    });
+}
+
+function build_html() {
+    return new Promise(function (resolve, reject) {
+        pages_path.forEach(element => {
+            page_html(element.name, element.path);
+        });
+
+        resolve();
+    });
+}
+
+exports.default = series(cleanUp, parallel(build_img, build_scss, build_js, build_html));

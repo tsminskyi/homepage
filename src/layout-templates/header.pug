@@ -1,0 +1,41 @@
+block header
+    .nav-bar.conteiner
+        .logo
+            img(src="../img/logo.png" alt="" srcset="")
+        .menu
+            .checkbox-btn
+                input#toggle.checkbox-btn__toggle(type="checkbox" name="" onchange="openMenu()")
+                label.checkbox-btn__label(for="toggle")
+                    span
+            .burger-menu
+                .burger-menu__navigate
+                    .checkbox-btn
+                        label.checkbox-btn__label.checkbox-btn__label_close-btn(for="toggle")
+                            span
+                    .combo-box
+                        p Menu
+                        ul
+                            li
+                                a(href="#") Home
+                            li
+                                a(href="#") Services
+                            li
+                                a(href="#") Portfolio
+                            li
+                                a(href="#") About
+                    .combo-box.combo-box_sall-size
+                        p Get in Touch
+                        ul
+                            li
+                                a(href="#") Contract Me
+                    .combo-box.combo-box_sall-size
+                        p Get Social
+                        ul
+                            li
+                                a(href="#") Behance
+                            li
+                                a(href="#") Dribble
+                            li
+                                a(href="#") Twitter
+                .copyright
+                    p © leon.com 2019
