@@ -3,6 +3,7 @@ const concat = require("gulp-concat");
 const del = require("delete");
 const image = require('gulp-image');
 const pug = require('gulp-pug');
+const rename = require('gulp-rename');
 
 const sass = require("gulp-sass");
 
@@ -15,14 +16,14 @@ const pages_path = [
 
 function page_js(name, path) {
     return src(path + '/js/*.js')
-        .pipe(concat("./build/" + name + "/js/index.js"))
+        .pipe(concat(`./build/js/${name}.js`))
         .pipe(dest('./'));
 }
 
 function page_scss(name, path) {
     return src(path + "/scss/import.scss")
         .pipe(sass())
-        .pipe(concat("./build/" + name + "/style/style.css"))
+        .pipe(concat(`./build/style/${name}.css`))
         .pipe(minifyCSS())
         .pipe(dest("./"));
 }
@@ -30,9 +31,10 @@ function page_scss(name, path) {
 function page_html(name, path) {
     return src(path + "/index.pug")
         .pipe(pug({
-            pretty: true
+            pretty: true,
         }))
-        .pipe(dest("./build/" + name));
+        .pipe(rename(name+'.html'))
+        .pipe(dest(`./build/`));
 }
 
 function cleanUp() {

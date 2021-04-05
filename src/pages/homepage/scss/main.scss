@@ -373,7 +373,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 100px 0;
+    padding: 160px 0;
     .great-title {
         :first-child {
             color: $white_2;
@@ -386,6 +386,7 @@ body {
         display: flex;
         flex-direction: column;
         width: 100%;
+        padding: 0 0 160px 0;
         .text {
             font-size: 55px;
             letter-spacing: -3px;
